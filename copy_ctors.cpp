@@ -21,7 +21,7 @@ public:
 
 int main(){
     A a1(7);
-    cout << a1.getA();
+    cout << a1.getA(); 
     A a2(a1); // copy ctor invoked 
     cout << endl << a2.getA();
     cout << endl << a1.getAddress();
