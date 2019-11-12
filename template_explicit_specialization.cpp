@@ -28,3 +28,9 @@ int main(){
     cout << maxx(3,4) << endl;
     return 0;
 }
+/*
+Specialized fn
+B
+Common fn
+4
+*/
