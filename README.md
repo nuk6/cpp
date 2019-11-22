@@ -6,4 +6,6 @@ Modern C++ Course
 
 => [Virtual inheritance 2](https://www.youtube.com/watch?v=GsK_4doAmpc)
 
+=>[Virtual inheritance use case](https://www.youtube.com/watch?v=WObyOa2FXwI)
+
 => [VTable & VPtr](https://www.youtube.com/watch?v=Z_FiER8aAqM)
