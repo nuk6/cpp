@@ -9,3 +9,5 @@ Modern C++ Course
 => [Virtual inheritance use case](https://www.youtube.com/watch?v=WObyOa2FXwI)
 
 => [VTable & VPtr](https://www.youtube.com/watch?v=Z_FiER8aAqM)
+
+=> [Deque implementation](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl)
