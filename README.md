@@ -11,3 +11,5 @@ Modern C++ Course
 => [VTable & VPtr](https://www.youtube.com/watch?v=Z_FiER8aAqM)
 
 => [Deque implementation](https://stackoverflow.com/questions/6292332/what-really-is-a-deque-in-stl)
+
+=> [Memory](https://www.youtube.com/watch?v=_8-ht2AKyH4)
