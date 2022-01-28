@@ -142,6 +142,39 @@ int main() {
     return 0;
 }
 ```
+4) Pointers
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a = 10;
+    int b = 20;
+    void* ptr = &a;
+    int* ptr1 = &a;
+    int *ptr2 = &b;
+    cout << ptr << " --- " << ptr1 << endl; // 0x61ff04 --- 0x61ff04
+    ptr = ptr2;
+    cout << "Void ptr val = " << *(int*)ptr << endl;
+
+    int* null_ptr = nullptr; 
+    // cout << *null_ptr << endl; Read not allowed
+    // *null_ptr = 10; Write not allowed;
+    null_ptr = ptr1;
+    cout << "Now read allowed : " << *null_ptr << endl;
+
+    *null_ptr = 40;
+
+    cout << "Even Write works : " << *null_ptr << endl;
+
+    void* NULL_ptr  = NULL;
+
+    // cout << "Literally NULL Ptr" << *NULL_ptr << endl; Read not allowed
+    // *NULL_ptr = 30; Write not allowed even with this
+
+    return 0;
+}
+```
 
 4) auto and static
 ```c++
