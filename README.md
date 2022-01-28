@@ -116,6 +116,33 @@ int main() {
 	return 0;
 }
 ```
+
+3) Initialization
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a{1} /*Uniform Initialization*/, b(2)/*Direct Initialization*/, 
+    c{} /* Gets Initiallized to it's default val*/, d = 4; /*Copy Initialization*/ 
+    //cout << "a = " << a <<" "<< b <<  " " << c << " " << d << endl; // 1 2 0 4
+    // int e(); // Most vexing parse
+
+    // Kaam ki baat
+
+    int stack_mem_arr[5]{3}; // 3 0 0 0 0
+    //cout << "Sz = " << sizeof(stack_mem_arr) << endl;
+    for(int i = 0; i < sizeof(stack_mem_arr)/sizeof(int); ++i) cout << stack_mem_arr[i] << " "; cout << endl;
+
+    int *heap_mem_arr = new int[5]{3}; // 3 0 0 0 0 
+    //cout << "Sz = " << sizeof(heap_mem_arr) << endl;
+    for(int i = 0; i < 5; ++i) cout << heap_mem_arr[i] << " "; 
+    cout << endl;
+
+    return 0;
+}
+```
+
 4) auto and static
 ```c++
 ```
