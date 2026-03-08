@@ -1,0 +1,35 @@
+{
+  "sublime_text_cp_setup": {
+    "build_system": {
+      "file": "CPP_Terminal.sublime-build",
+      "path": "~/Library/Application Support/Sublime Text/Packages/User/",
+      "content": {
+        "target": "terminus_exec",
+        "cancel": "terminus_cancel_build",
+        "focus": true,
+        "shell_cmd": "g++ -std=c++20 -O2 -Wall \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+        "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+        "working_dir": "${file_path}",
+        "selector": "source.c++"
+      }
+    },
+    "required_packages": [
+      "Terminus",
+      "CppFastOlympicCoding"
+    ],
+    "dependencies": {
+      "path": "~/Library/Application Support/Sublime Text/Lib/python38/",
+      "packages": ["ptyprocess", "pyte", "wcwidth"]
+    },
+    "shortcuts": {
+      "compile_and_run": "Cmd + B",
+      "select_build_system": "Cmd + Shift + B",
+      "cancel_build": "Ctrl + C"
+    },
+    "setup_commands": [
+      "brew install --cask sublime-text",
+      "pip3 install --target=\"$HOME/Library/Application Support/Sublime Text/Lib/python38\" ptyprocess pyte wcwidth",
+      "cd \"$HOME/Library/Application Support/Sublime Text/Packages\" && git clone https://github.com/randy3k/Terminus.git Terminus"
+    ]
+  }
+}
